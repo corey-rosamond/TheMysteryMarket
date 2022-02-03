@@ -1,0 +1,1432 @@
+/*==========================================================
+Theme Name: Chiropractic - Care for Back Pain
+Author: OG Web Solutions
+Author URI: https://www.ogwebsolutions.com/
+Version:  1.0
+==========================================================*/
+
+
+/*==========================================================
+	CSS Index 
+============================================================
+    # Global Styles
+        ## Header
+		## Footer
+		## Banner Section
+	# Home Page
+	# Appointment Confirmation Page
+	# Privacy Policy Page
+	# Order Page
+	# Order Cancelled Page
+	# Thank You Page
+	
+==========================================================*/
+
+
+/*==========================================================
+    # Global Styles
+==========================================================*/
+
+body {
+	color: #202020;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/*========== Text Colors ==========*/
+
+.text-blue {
+	color: #02a5e9;
+}
+
+.text-yellow {
+	color: #FFDB5D;
+}
+
+.text-orange {
+	color: #fc6406;
+}
+
+/*========== Background Colors ==========*/
+
+.bg-blue {
+	background-color: #02a5e9;
+}
+
+/*========== Font Weight ==========*/
+
+.font-weight-regular {
+	font-weight: 400;
+}
+
+.font-weight-medium {
+	font-weight: 500;
+}
+
+.font-weight-semibold {
+	font-weight: 600;
+}
+
+
+/*========== Text Decoration ==========*/
+
+.text-underline {
+	text-decoration: underline;
+}
+
+/*========== Line Height ==========*/
+
+.line-height-1-5 {
+	line-height: 1.5 !important;
+}
+
+.line-height-1-2 {
+	line-height: 1.2 !important;
+}
+
+
+
+/*========== Section Title ==========*/
+
+.section-title {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.section-title h2 {
+	font-size: 62px;
+}
+
+.section-title h5 {
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+@media (max-width:991.98px) {
+	.section-title h2 {
+		font-size: 42px;
+	}
+}
+
+@media (max-width:1199.98px) {
+	.section-title h2 {
+		font-size: 36px;
+	}
+	.section-title h5 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.section-title h2 {
+		font-size: 28px;
+	}
+	.section-title h5 {
+		font-size: 18px;
+	}
+}
+
+
+/*========== Buttons ==========*/
+
+.btn {
+	border-radius: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.btn:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.btn .title {
+	font-size: 22px;
+}
+
+.btn .sub-title {
+	font-size: 17px;
+}
+
+.btn-orange {
+	background-color: #fc6406;
+	color: #fff;
+	max-width: 430px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 2px #fc6406;
+}
+
+.btn-orange:hover {
+	background-color: transparent;
+	color: #fc6406;
+}
+
+.btn-hover-white:hover {
+	background-color: #fff;
+	color: #fc6406;
+	border-color: #fff;
+}
+
+@media (max-width:767.98px) {
+	.btn .title {
+		font-size: 16px;
+	}
+	.btn .sub-title {
+		font-size: 14px;
+	}
+}
+
+
+/*========== Section Spacer ==========*/
+
+.section-spacer {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.section-alt-spacer {
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.section-equal-spacer {
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+@media (max-width:991.98px) {
+	.section-spacer {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.section-alt-spacer {
+		padding-top: 45px;
+		padding-bottom: 50px;
+	}
+	.section-equal-spacer {
+		padding-top: 45px;
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.section-spacer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.section-alt-spacer {
+		padding-top: 25px;
+		padding-bottom: 30px;
+	}
+	.section-equal-spacer {
+		padding-top: 25px;
+		padding-bottom: 0;
+	}
+}
+
+/*========== Custom List ==========*/
+
+.custom-list-arrow {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.custom-list-arrow li {
+	position: relative;
+	padding-left: 40px;
+}
+
+.custom-list-arrow li:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.custom-list-arrow li:before {
+	content:url('../img/home-05-right-arrow-icon.png');
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*========== Custom Bullet ==========*/
+
+.custom-list-blue {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.custom-list-blue li {
+	position: relative;
+	padding-left: 25px;
+}
+
+.custom-list-blue li:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.custom-list-blue li:before {
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width:10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #02a5e9;
+}
+
+/*========== Blockquote ==========*/
+
+.blockquote {
+	background-color: #f5f5f5;
+	padding: 20px;
+}
+
+@media (max-width:767.98px) {
+	.blockquote * {
+		font-size: 18px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Header
+---------------------------------------------------------*/
+
+header {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px #c1c1c1;
+	box-shadow: 0 0 5px #c1c1c1;
+}
+
+.navbar-brand {
+	max-width: 170px;
+	width: 100%;
+}
+
+@media (max-width:767.98px) {
+	header p {
+		font-size: 14px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Footer
+---------------------------------------------------------*/
+
+footer {
+	background: #011226;
+	padding-top: 50px;
+	padding-bottom: 45px;
+	border-top: 5px solid #02a5e9;
+}
+
+footer p,
+footer a {
+	color: #fff;
+	opacity: .5;
+}
+
+footer ul li {
+	position: relative;
+}
+
+footer ul li:not(:last-child) {
+	margin-right: 15px !important;
+}
+
+footer ul li:not(:last-child):after {
+	content: '';
+    position: absolute;
+    right: -10px;
+    top: 4px;
+    width: 1px;
+    height: 15px;
+	background-color: rgba(255,255,255,.5);
+}
+
+footer .logo {
+	max-width: 170px;
+}
+
+footer p:last-of-type {
+	margin-bottom: 0;
+}
+
+@media (max-width:767.98px) {
+	footer {
+		font-size: 14px;
+	}
+}
+
+/*----------------------------------------------------------
+    ## Banner-Section
+---------------------------------------------------------*/
+
+.banner-section h2 {
+	font-size: 50px;
+}
+
+@media (max-width:1199.98px) {
+	.banner-section h2 {
+		font-size: 36px;
+	}
+}
+
+@media (max-width:991.98px) {
+	.banner-section h2 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.banner-section h2 {
+		font-size: 26px;
+	}
+}
+
+
+/*==========================================================
+    # Home Page
+==========================================================*/
+
+main {
+	margin-top: 52px;
+}
+
+@media (max-width:767.98px) {
+	main {
+		margin-top: 109px;
+	}
+}
+
+/*----------------------------------------------------------
+    ## Hero Section
+---------------------------------------------------------*/
+
+.hero-section {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	background-image: url("../../Image/Front-End/Banner_1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.hero-section h1 {
+	font-size: 88px;
+}
+
+.hero-section h2 {
+	font-size: 68px;
+	border: solid 2px #000;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 15px;
+}
+
+.hero-section p {
+	font-size: 21px;
+	max-width: 600px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-section .btn {
+	margin-top: 30px;
+}
+
+.hero-section .btn:before {
+	content: url('../img/left_arrow.png');
+	position: absolute;
+	left: -130px;
+	top: -55px;
+}
+
+.hero-section .btn:after {
+	content: url('../img/right_arrow.png');
+	position: absolute;
+	right: -130px;
+	top: -55px;
+}
+
+@media (max-width:1500px) {
+	.hero-section {
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+}
+
+@media (max-width:1199.98px) {
+	.hero-section {
+		background-position: 73% 100%;
+	}
+	
+	.hero-section h1 {
+		font-size: 70px;
+	}
+	.hero-section h2 {
+		font-size: 54px;
+	}
+	.hero-section p {
+		font-size: 18px;
+	}
+}
+
+@media (max-width:991.98px) {
+	.hero-section .btn:before,
+	.hero-section .btn:after {
+		display:none;
+	}
+	.hero-section h1 {
+		font-size: 60px;
+	}
+	.hero-section h2 {
+		font-size: 44px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.hero-section h1 {
+		font-size: 36px;
+	}
+	.hero-section h2 {
+		font-size: 26px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Benefits Section
+---------------------------------------------------------*/
+
+.benefits-section {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background: rgb(1, 84, 161);
+	background: -moz-linear-gradient(90deg, rgba(1, 84, 161, 1) 0%, rgba(0, 113, 185, 1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(1, 84, 161, 1) 0%, rgba(0, 113, 185, 1) 100%);
+	background: linear-gradient(90deg, rgba(1, 84, 161, 1) 0%, rgba(0, 113, 185, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0154a1", endColorstr="#0071b9", GradientType=1);
+}
+
+.benefits-section h2 {
+	font-size: 43px;
+}
+
+.benefits-section h5 {
+	font-size: 18px;
+}
+
+.benefits-section .inner-container {
+	margin-top: 30px;
+}
+
+.benefits-section .inner-container figure {
+	margin-bottom: 20px;
+}
+
+.benefits-section .inner-container h5 {
+	margin-bottom: 5px;
+}
+
+@media (max-width:1199.98px) {
+	.benefits-section h2 {
+		font-size: 30px;
+	}
+	.benefits-section .section-title {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.benefits-section h2 {
+		font-size: 26px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Improve Section
+---------------------------------------------------------*/
+
+.improve-section {
+	background: #fff;
+}
+
+.improve-section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.improve-section ul li {
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.improve-section ul li:last-child {
+	margin-bottom: 0;
+}
+
+.improve-section ul li img {
+	width: 78px;
+	margin-right: 20px;
+	flex-shrink: 0;
+}
+
+.improve-section h3 {
+	font-size: 24px;
+}
+
+.improve-section p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.improve-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width:767.98px) {
+	.improve-section h3 {
+		font-size: 20px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Why are You Suffering Section
+---------------------------------------------------------*/
+
+.cta-section {
+	padding-top: 145px;
+	padding-bottom: 155px;
+	background-image: url("../../Image/Front-End/Banner_6.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.cta-section h2 {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+}
+
+.cta-section h5 {
+	max-width: 700px;
+}
+
+.cta-section .section-title {
+	max-width: 900px;
+}
+
+.cta-section h2:before {
+	content: url('../img/home-04-left-arrow.png');
+	position: absolute;
+	left: -20px;
+	top: 55px;
+}
+
+.cta-section h2:after {
+	content: url('../img/home-04-right-arrow.png');
+	position: absolute;
+	right: -20px;
+	top: 55px;
+}
+
+@media (max-width:1199.98px) {
+	.cta-section {
+		padding-top: 110px;
+		padding-bottom: 120px;
+	}
+}
+
+@media (max-width:991.98px) {
+	.cta-section {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.cta-section h2:before,
+	.cta-section h2:after {
+		display:none;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## FAQ 
+---------------------------------------------------------*/
+
+.faq-section {
+	background-color: #f0f0f0;
+}
+
+.faq-section .container {
+	max-width: 980px;
+}
+
+.faq-section .section-title h2 {
+	font-size: 56px;
+}
+
+.faq-section .section-title p {
+	font-size: 22px;
+	padding: 0 60px;
+}
+
+.accordion .accordion-section {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.accordion .accordion-section:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.accordion .accordion-section-title {
+	color: #202020;
+	font-weight: bold;
+	font-size: 22px;
+	position: relative;
+	margin: 20px 0;
+	display: block;
+	transition: ease 0.3s all;
+}
+
+.accordion .accordion-section-title.active {
+	margin-bottom: 10px;
+	color: #02a5e9;
+	border-bottom: 1px solid #02a5e9;
+	padding-bottom: 10px;
+}
+
+.accordion .accordion-section-title:after {
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	margin-top: -3px;
+	content: '';
+	height: 0;
+	width: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #3c3c3c;
+}
+
+.accordion .accordion-section-title.active:after {
+	border-bottom: 7px solid #02a5e9;
+	border-top: 0;
+	border-bottom: 7px solid #02a5e9;
+}
+
+.accordion-section-content {
+	display: none;
+}
+
+.accordion-section-content p {
+	font-size: 18px;
+	color: #2c2c2c;
+	line-height: 1.4;
+}
+
+.accordion .accordion-section-title:hover {
+	text-decoration: none;
+	color: #02a5e9;
+}
+
+@media (max-width:1199.98px) {
+	.faq-section .section-title h2 {
+		font-size: 36px;
+	}
+}
+
+@media (max-width:768.98px) {
+	.faq-section .section-title h2 {
+		font-size: 28px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Bottom CTA Section
+---------------------------------------------------------*/
+
+.bottom-cta-section {
+	padding-top: 115px;
+	padding-bottom: 115px;
+	background-image: url("../../Image/Front-End/Banner_11.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.bottom-cta-section .section-title {
+	max-width: 840px;
+	color: black;
+}
+
+.bottom-cta-section .section-title p {
+	font-size: 22px;
+	color: black;
+}
+
+@media (max-width:991.98px) {
+	.bottom-cta-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+/*----------------------------------------------------------
+    ## Testimonial Section
+---------------------------------------------------------*/
+
+
+.testimonial-section figure img {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+.testimonial-section .item-single {
+	background-color: #f9f9f9;
+	border: solid 2px #dddddd;
+	margin-bottom: 25px;
+}
+
+.testimonial-section .content {
+	padding: 15px 20px;
+	border-left: solid 2px #dddddd;
+}
+
+.testimonial-section .content p {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.testimonial-section .content h3 {
+	font-size: 18px;
+}
+
+.testimonial-section .border,
+.testimonial-section .border-left {
+	border-color: #ddd!important;
+	border-width: 2px !important;
+	background-color: #f9f9f9;
+}
+
+.testimonial-section .border-left {
+	padding: 15px 10px 15px 20px;
+}
+
+.testimonial-box img {
+	flex-shrink: 0;
+}
+
+.testimonial-box h3 {
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.testimonial-box p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+@media (max-width:991.98px) {
+	.testimonial-section {
+		padding-bottom: 25px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.testimonial-section .content {
+		border-left: none;
+		border-top: solid 2px #dddddd;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Treatment Section
+---------------------------------------------------------*/
+
+.treatment-section {
+	background-color: #e5f7ff;
+}
+
+.treatment-section .section-title {
+	margin-bottom: 35px;
+}
+
+.treatment-section .item-single {
+	margin-bottom: 20px;
+}
+
+.treatment-section .item-single .content {
+	margin-top: 20px;
+}
+
+.treatment-section .item-single .content h5 {
+	margin-bottom: 10px;
+}
+
+.treatment-section .item-single .content p:last-of-type {
+	margin-bottom: 0;
+}
+
+@media (min-width:1200px) {
+	.treatment-section .section-title h5 {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+
+/*----------------------------------------------------------
+    ## Chiropractor Section
+---------------------------------------------------------*/
+
+.chiropractor-section .section-title {
+	margin-bottom: 35px;
+}
+
+.chiropractor-section .section-title p {
+	padding: 0 60px;
+	font-size: 22px;
+}
+
+.chiropractor-section p {
+	font-size: 17px;
+}
+
+.chiropractor-section .right-container ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.chiropractor-section .certificate {
+	padding: 20px;
+	background-color: #f9f9f9;
+}
+
+.chiropractor-section .caption {
+	padding: 15px;
+}
+
+.chiropractor-section .caption h3 {
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+@media (max-width:1199.98px) {
+	.chiropractor-section p {
+		font-size: 15px;
+	}
+	.custom-list-arrow li {
+		font-size: 15px;
+	}
+}
+/*----------------------------------------------------------
+    ## Free Consultation Popup
+---------------------------------------------------------*/
+
+.free-consultation-popup .modal-content {
+	border-radius: 0;
+	border: none;
+}
+
+.free-consultation-popup .top-content h3 {
+	font-size: 26px;
+}
+
+.free-consultation-popup .top-content h3:before,
+.free-consultation-popup .top-content h3:after {
+	content:"\f103";
+	font-family: 'FontAwesome';
+	color: #fff;
+	position: absolute;
+	font-size: 50px;
+	top: -10px;
+}
+
+.free-consultation-popup .top-content h3:before {
+	left: 20px;
+}
+
+.free-consultation-popup .top-content h3:after {
+	right: 20px;
+}
+
+.free-consultation-popup .top-content.inner-container{
+	padding: 20px;
+}
+
+.free-consultation-popup .bottom-content.inner-container{
+	padding: 30px 15px;
+}
+
+.free-consultation-popup .bottom-content .btn {
+	max-width: 330px;
+}
+
+.free-consultation-popup .form-status {
+	display: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+	border: 1px solid #02a5e9;
+    background: #02a5e9;
+}
+
+@media (max-width:991.98px) {
+	.free-consultation-popup .top-content h3 {
+		font-size: 20px;
+	}
+	.free-consultation-popup .top-content h3:before, .free-consultation-popup .top-content h3:after {
+		font-size: 30px;
+		top: -5px;
+	}
+	.free-consultation-popup .top-content h3:before {
+		left: 0px;
+	}
+	.free-consultation-popup .top-content h3:after {
+		right: 0px;
+	}
+}
+
+/*==========================================================
+    # Appointment Confirmation Page
+==========================================================*/
+
+.appointment-confirmation-banner {
+	background-image: url("../../Image/Front-End/Thank_You_Banner.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0 150px;
+	text-align: center;
+}
+
+.appointment-confirmation-banner .banner_box {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.appointment-confirmation-banner h1 {
+	font-size: 55px;
+	position: relative;
+	padding-bottom: 35px;
+	margin-bottom: 25px;
+}
+
+.appointment-confirmation-banner h1 span {
+	font-size: 28px;
+}
+
+.appointment-confirmation-banner h1:before {
+	width: 180px;
+	height: 5px;
+	background-color: #ffdb5d;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	content: "";
+	transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+}
+
+.appointment-confirmation-banner p {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.appointment-confirmation-banner h2 {
+	font-size: 36px;
+}
+
+.appointment-confirmation-banner h2 span {
+	margin-top: 25px;
+}
+
+.appointment-confirmation-banner a:hover {
+	color: #fff;
+}
+
+@media (max-width:1500px) {
+	.appointment-confirmation-banner {
+		padding-top: 80px;
+		padding-bottom: 130px;
+	}
+}
+
+@media (max-width:1199.98px) {
+	.appointment-confirmation-banner h1 {
+		font-size: 36px;
+	}
+
+	.appointment-confirmation-banner h2 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.appointment-confirmation-banner {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.appointment-confirmation-banner h1 {
+		font-size: 28px;
+	}
+	.appointment-confirmation-banner h1 span {
+		font-size: 22px;
+	}
+	.appointment-confirmation h2 {
+		font-size: 22px;
+	}
+}
+
+/*==========================================================
+    # Privacy Policy Page
+==========================================================*/
+
+.privacy-policy-page .inner-container h3 {
+	font-size: 26px;
+}
+
+.counter {
+	-ms-flex-negative: 0;
+    flex-shrink: 0;
+	width:30px;
+	height: 30px;
+	margin-right: 10px;
+	border-radius: 100px;
+	font-size: 20px;
+}
+
+@media (max-width:767.98px) {
+	.privacy-policy-page .inner-container h3 {
+		font-size: 22px;
+	}
+}
+
+/*==========================================================
+    # Order Page
+==========================================================*/
+
+.order-info {
+	background: #ecfaff;
+    padding: 15px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 30px;
+}
+
+.order-info h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.order-info ul li {
+	font-size: 14px;
+}
+
+.order-info ul li:not(:last-child) {
+	border-bottom: 1px solid #b0d2de;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.order-info ul li:last-child {
+	font-size: 16px;
+}
+
+.order-form {
+	border: 1px solid #d9d9d9;
+	padding: 30px;
+    box-shadow: 0px 2px 10px -1px #ccc;
+}
+
+.order-form .form-title {
+	font-size: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px dotted #c7c7c7;
+	margin-bottom: 30px;
+}
+
+.form-control {
+	padding: 15px;
+	border-radius: 0;
+	height: auto;
+	resize: none;
+}
+
+.form-control.error {
+	border-color: #f00;
+}
+
+label.error {
+    color: #f00;
+    padding-left: 12px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.order-banner {
+    background-image: url(../img/order-banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.order-banner .section-title h5 {
+	max-width: 650px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.order-form .right-container .btn {
+	max-width:100%;
+}
+
+.order-banner .video-section {
+	max-width:800px;
+}
+
+.order-banner .video-section video {
+	border: solid 2px #fff;
+}
+
+.scroll-down i {
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+	font-size: 30px;
+	font-size: 30px;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:991.98px) {
+	.form-control {
+		padding: 10px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.order-form {
+		padding: 15px;
+	}
+}
+
+/*==========================================================
+    # Order Cancelled Page
+==========================================================*/
+
+.order-cancelled-banner {
+	background-image: url('../img/banner-01.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.order-cancelled-content-section {
+	max-width: 880px;
+}
+
+.order-cancelled-content-section .order-details {
+	-webkit-box-shadow: 0 0 8px #c1c1c1;
+	box-shadow: 0 0 8px #c1c1c1;
+}
+
+.order-cancelled-content-section .order-details h2 {
+	padding: 20px;
+}
+
+.order-cancelled-content-section .order-details .products {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.order-cancelled-content-section .order-details .products tr th {
+	border-bottom: 1px solid #cccccc;
+	font-size: 20px;
+}
+
+.order-cancelled-content-section .order-details .products tr td {
+	font-size: 18px;
+}
+
+.order-cancelled-content-section .order-details .products tr th,
+.order-cancelled-content-section .order-details .products tr td {
+	padding: 20px;
+}
+
+.order-cancelled-content-section .order-details .products tr th:last-child,
+.order-cancelled-content-section .order-details .products tr td:last-child {
+	text-align: right;
+} 
+
+@media (max-width:1199.98px) {
+	.order-cancelled-content-section .order-details h2 {
+		font-size: 26px;
+	}
+}
+
+@media (max-width:991.98px) {
+	.section-title h5 {
+		font-size: 18px;
+	}
+	.order-cancelled-content-section .order-details h2 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.order-cancelled-content-section .order-details .products tr th {
+		font-size: 16px;
+	}
+	.order-cancelled-content-section .order-details .products tr td {
+		font-size: 14px;
+	}
+	
+	.order-cancelled-content-section .order-details .products tr th,
+	.order-cancelled-content-section .order-details .products tr td {
+		padding: 15px;
+	}
+
+	.order-cancelled-content-section .order-details .products {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/*==========================================================
+    # Thank You Page
+==========================================================*/
+
+.thank-you-banner {
+	background-image: url("../../Image/Front-End/Thank_You_Banner_Small.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.thank-you-banner .section-title h5 {
+	max-width: 650px;
+	width: 100%;
+}
+
+.thank-you-content-section {
+	max-width: 880px;
+}
+
+.thank-you-content-section .order-details {
+	-webkit-box-shadow: 0 0 8px #c1c1c1;
+	box-shadow: 0 0 8px #c1c1c1;
+}
+
+.thank-you-content-section .order-details h2 {
+	padding: 20px;
+}
+
+.thank-you-content-section .order-details .products {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.thank-you-content-section .order-details .products tr th {
+	border-bottom: 1px solid #cccccc;
+	font-size: 20px;
+}
+
+.thank-you-content-section .order-details .products tr td {
+	font-size: 18px;
+}
+
+.thank-you-content-section .order-details .products tr th,
+.thank-you-content-section .order-details .products tr td {
+	padding: 20px;
+}
+
+.thank-you-content-section .order-details .products tr th:last-child,
+.thank-you-content-section .order-details .products tr td:last-child {
+	text-align: right;
+} 
+
+@media (max-width:1199.98px) {
+	.thank-you-content-section .order-details h2 {
+		font-size: 26px;
+	}
+}
+
+@media (max-width:991.98px) {
+	.thank-you-content-section .order-details h2 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.thank-you-content-section .order-details .products tr th {
+		font-size: 16px;
+	}
+	.thank-you-content-section .order-details .products tr td {
+		font-size: 14px;
+	}
+	
+	.thank-you-content-section .order-details .products tr th,
+	.thank-you-content-section .order-details .products tr td {
+		padding: 15px;
+	}
+
+	.thank-you-content-section .order-details .products {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.thank-you-content-section .order-details h2 {
+		font-size: 20px;
+	}
+}

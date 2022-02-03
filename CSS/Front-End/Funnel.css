@@ -1,0 +1,32 @@
+.callToAction {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #a12727;
+    border-radius: 8px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    -webkit-box-shadow: #ff5959 0 0 40px 0;
+    -moz-box-shadow: #ff5959 0 0 40px 0;
+    box-shadow: #ff5959 0 0 40px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-align:left;
+}
+.callToAction:hover,
+.callToAction:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: -moz-linear-gradient(top, #ff5959, #b62f2f);
+    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    color: #ffffff;
+    text-decoration: none;
+}
+.callToAction:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
+    background: -moz-linear-gradient(top, #982727, #982727);
+    background: linear-gradient(to bottom, #982727, #982727);
+}

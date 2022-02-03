@@ -1,0 +1,72 @@
+.upsell-item{
+    overflow: hidden;
+    padding: 0 0 0 0;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 10px -1px #ccc;
+    cursor: pointer;
+}
+
+.upsell-item:hover{
+    box-shadow: 0 3px 20px -2px #636363FF;
+}
+
+.upsell-item .image-container{
+    overflow: hidden;
+    border-right: 1px solid #d9d9d9;
+    position: relative;
+}
+
+.upsell-item .image-container img{
+    z-index: 100;
+}
+
+.upsell-item .image-container input[type=checkbox]{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    z-index: 200;
+    width: 20px;
+    height: 20px;
+}
+
+.upsell-item .description-container{
+    position: relative;
+    padding: 10px 20px 10px 15px;
+}
+
+.upsell-item .title{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.upsell-item .description{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.upsell-item .description ul{
+    padding: 0 0 0 20px;
+    margin: 0 0 0 0;
+}
+
+.upsell-item .description-container .price-one{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    text-decoration: line-through;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.upsell-item .description-container .price-two{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 103px;
+    text-align: left;
+    color: red;
+}
